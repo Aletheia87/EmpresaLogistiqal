@@ -1,8 +1,6 @@
 package cl.desafiolatam.empresaLogistiqal.vo;
 
-import java.util.List;
 
-import cl.desafiolatam.empresaLogistiqal.model.Producto;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -14,13 +12,14 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class ProductoVO extends GenericVO {
-	
-	List<Producto> productos;
+public class NumberVO extends GenericVO {
 
-	public ProductoVO(List<Producto> productos, String mensaje, String codigo) {
+	long valor;
+
+	public NumberVO(long valor, String mensaje, String codigo) {
 		super(mensaje, codigo);
-		this.productos = productos;
+		this.valor = valor;
 	}
+	
 
 }
